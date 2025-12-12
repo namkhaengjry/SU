@@ -7,7 +7,8 @@
   <title>Jirayu – Portfolio for University</title>
 
   <!-- SEO & Open Graph -->
-  <meta name="description" content="Portfolio ออนไลน์สำหรับยื่นเข้าคณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม โดย Jirayu Chiyanuwat" />
+  <meta name="description"
+    content="Portfolio ออนไลน์สำหรับยื่นเข้าคณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม โดย Jirayu Chiyanuwat" />
   <meta property="og:title" content="Jirayu Chiyanuwat – Portfolio for University">
   <meta property="og:description" content="Portfolio ออนไลน์สำหรับยื่นเข้าคณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม">
   <!-- เปลี่ยน your-domain.com เป็นโดเมนจริงของคุณตอนอัปขึ้นโฮสต์ -->
@@ -56,6 +57,9 @@
         'Helvetica Neue', Arial, sans-serif;
       color: #0f172a;
       background: #f9fafb;
+      font-size: 16px;
+      line-height: 1.5;
+      overflow-x: hidden;
     }
 
     h1,
@@ -549,31 +553,6 @@
       border-color: #e2e8f0 !important;
     }
 
-    /* Outlined Pill Style for Contact */
-    .pill-icon {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      border: 1px solid currentColor;
-      background: transparent;
-    }
-
-    .pill-copy {
-      border-radius: 12px;
-      border: 1px solid;
-      padding: 6px 12px;
-      font-size: 12px;
-      transition: all .2s ease;
-    }
-
-    .pill-copy:hover {
-      transform: translateY(-2px);
-      opacity: .9;
-    }
-
-
     /* CONTACT PRO UI PACK */
 
     /* Pill Icon (Glass + Outline) */
@@ -615,38 +594,6 @@
       opacity: 0.95;
     }
 
-    /* Toast Notification */
-    #toast {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      padding: 12px 20px;
-      background: rgba(255, 255, 255, 0.45);
-      backdrop-filter: blur(12px);
-      border-radius: 14px;
-      font-size: 14px;
-      color: #0f172a;
-      border: 1px solid rgba(255, 255, 255, 0.45);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
-      opacity: 0;
-      pointer-events: none;
-      transition: 0.25s ease;
-      z-index: 9999;
-    }
-
-    .dark #toast {
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    /* toast visible */
-    #toast.show {
-      opacity: 1;
-      transform: translateY(-8px);
-    }
-
-
     /* ============================
    MOBILE FIX — CONTACT PILL
 =============================== */
@@ -685,7 +632,10 @@
     /* Navbar glass */
     /* Footer */
     /* Smooth transitions */
-    * {
+    .card,
+    button,
+    nav,
+    section {
       transition: background .3s ease, box-shadow .3s ease, transform .3s ease;
     }
   </style>
@@ -794,49 +744,6 @@
   </style>
 
   <style>
-    .copy-toast {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      padding: 12px 20px;
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-      font-size: 16px;
-      border-radius: 12px;
-      backdrop-filter: blur(12px);
-      display: none;
-    }
-
-    .copy-toast.show {
-      display: block;
-    }
-  </style>
-
-
-  <style>
-    #copyToast {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 14px;
-      font-size: 16px;
-      z-index: 9999;
-      display: none;
-      backdrop-filter: blur(10px);
-    }
-
-    #copyToast.show {
-      display: block;
-    }
-  </style>
-
-  <style>
     #copyToast {
       position: fixed;
       top: 50%;
@@ -862,10 +769,6 @@
       object-fit: cover;
     }
 
-    body {
-      font-size: 16px;
-      line-height: 1.5;
-    }
 
     @media (max-width: 480px) {
       body {
@@ -873,9 +776,6 @@
       }
     }
 
-    body {
-      overflow-x: hidden;
-    }
 
     @media (max-width: 768px) {
       .hero-card {
@@ -1365,7 +1265,8 @@
           อยู่เสมอ เพื่อเติบโตไปพร้อมกับการพัฒนาของโลกดิจิทัล
         </p>
         <p>
-          ผมเชื่อว่าการได้เข้าศึกษาในคณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์
+          ผมเชื่อว่าการได้เข้าศึกษาในคณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม
+          สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์
           มหาวิทยาลัยศิลปากร
           จะเป็นก้าวสำคัญที่ช่วยให้ผมได้ต่อยอดความฝันและศักยภาพของตนเองให้เต็มที่
           และสามารถกลับมาพัฒนาสังคมรอบตัวให้ดีขึ้นต่อไปในอนาคต
@@ -1625,9 +1526,16 @@
       const heroCard = document.getElementById('heroCard');
       const backToTop = document.getElementById('backToTop');
       const progressBar = document.getElementById('scrollProgress');
-
       const actWrap = document.getElementById('activitiesGrid');
       const certWrap = document.getElementById('certGrid');
+      const pdfDialog = document.getElementById('pdfDialog');
+
+      pdfDialog?.addEventListener('click', (e) => {
+        if (e.target === pdfDialog) {
+          closePdfPreview();
+        }
+      });
+
 
       /* ========== THEME TOGGLE ========== */
       function applyTheme(theme) {
@@ -1935,20 +1843,6 @@
         });
       });
 
-      const copyAllBtn = document.getElementById('copyAllContacts');
-      copyAllBtn?.addEventListener('click', async () => {
-        const items = Array.from(document.querySelectorAll('[data-copy]')).map(b => b.getAttribute('data-copy'));
-        const text = items.join('\n');
-        try {
-          await navigator.clipboard.writeText(text);
-          const old = copyAllBtn.textContent;
-          copyAllBtn.textContent = 'คัดลอกทั้งหมดแล้ว';
-          setTimeout(() => (copyAllBtn.textContent = old), 1400);
-        } catch (e) {
-          console.warn(e);
-        }
-      });
-
       /* ========== BACK TO TOP + PROGRESS BAR ========== */
       window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -2047,6 +1941,7 @@
       dlg.close();
       frame.src = '';
     }
+
   </script>
 
   <!-- PDF Preview Modal -->
@@ -2077,21 +1972,9 @@
       </div>
     </div>
   </dialog>
-  <div class="copy-toast" id="copyToast">คัดลอกสำเร็จ</div>
-  <div id="copyToast">คัดลอกสำเร็จ</div>
+
   <div id='copyToast'>✔ คัดลอกสำเร็จ</div>
 
-  <script>
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const text = btn.getAttribute('data-copy');
-        navigator.clipboard.writeText(text);
-        const t = document.getElementById('copyToast');
-        t.classList.add('show');
-        setTimeout(() => t.classList.remove('show'), 1300);
-      });
-    });
-  </script>
 </body>
 
 </html>
